@@ -1,0 +1,242 @@
+// Normally mainpage styles
+ 
+
+.out
+	margin: 26px auto
+	width: 1000px
+.header
+	margin: 0 0 20px
+	padding: 0 26px 0 27px
+	height: 82px
+	background-color: #6ea31a
+	@include filter-gradient(#6ea31a, #8bd21a, vertical) 
+	$experimental-support-for-svg: true
+	@include background-image(linear-gradient(top, #6ea31a 0%,#8bd21a 100%))
+	color: #FFF
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px 
+	border-radius: 10px
+	&__logo
+		margin: 23px 0px 0 0 
+		float: left
+		+s(logo)
+		text-indent: -9999px
+	&__slogan
+		padding: 24px 0 0 45px
+		float: left
+		font-weight: bold
+		font-size: 16px 
+		text-transform: uppercase
+	&__phone	
+		margin: 24px 0 0
+		float: right
+		.text
+			+s(phone)
+			text-indent: -9999px
+		.link
+			text-decoration: underline
+			color: #fff
+
+.main
+.hero
+	padding: 0 0 24px
+	text-align: center
+	.title
+		padding: 17px 0 26px
+		font-size: 40px
+		font-weight: bold
+		line-height: 1 
+		text-transform: uppercase
+.action
+	+clr
+.action__desc
+	width: 650px
+	height: 194px
+	float: left
+	+si(action)
+.action__paid,
+.action__free
+	padding: 46px 0 0
+	float: left
+	width: 300px
+	text-align: center
+	.title
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 20px
+.action__paid
+	padding-left: 24px 
+	color: #5F2600 
+	.text
+		padding-bottom: 0
+		font-size: 14px
+		font-weight: normal 
+		color: #924500 
+	.price
+		height: 35px
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+		span
+			position: relative
+			line-height: 36px 
+			display: inline-block			
+			+s(price)
+			font-size: 25px
+			text-transform: uppercase
+			color: #FFF 
+			text-shadow: 1px 1px 1px rgba(119, 36, 0, 0.75)
+			i
+				position: absolute
+				top: 10px
+				left: 12px 
+				+s(line)
+.action__free
+	margin-left: 12px
+	.title
+		padding: 0 0 21px
+		color: #FFF
+		span
+			text-transform: none
+	.price
+		font-size: 25px
+		font-weight: bold
+		text-transform: uppercase
+		color: #FFF 
+.register
+	margin-right: 26px  
+	width: 300px
+	float: right
+	.small
+		padding: 7px 0 0 15px
+		float: right
+		font-size: 11px
+		text-decoration: underline  
+		line-height: 12px
+		i
+			padding: 0 6px 0 0
+			display: inline-block
+			vertical-align: middle 
+			+s(lock) 
+.register__row
+	margin: 0 0 4px
+	font-size: 12px
+	+clr
+	input
+		float: right
+		padding: 0 10px 
+		width: 200px
+		height: 27px
+		background-color: #DFE7EC
+		background-image: -moz-linear-gradient(bottom, white 0%, #ededed 100%)
+		background-image: -o-linear-gradient(bottom, white 0%, #ededed 100%)
+		background-image: -webkit-linear-gradient(bottom, white 0%, #ededed 100%)
+		background-image: linear-gradient(to top, white 0%, #ededed 100%)
+		border: 1px solid #979797
+		-moz-border-radius: 10px
+		-webkit-border-radius: 10px
+		border-radius: 10px
+		-moz-box-shadow: inset 1.5px 2.6px 3px rgba(59, 61, 63, 0.15)
+		-webkit-box-shadow: inset 1.5px 2.6px 3px rgba(59, 61, 63, 0.15)
+		box-shadow: inset 1.5px 2.6px 3px rgba(59, 61, 63, 0.15)
+	label
+		padding: 0 0 0 0
+		float: left
+		width: 66px
+		line-height: 29px
+		text-align: right
+.register__submit
+	margin-top: 2px 
+	+s(submit)	
+	-moz-border-radius: 16px
+	-webkit-border-radius: 16px
+	border-radius: 16px
+	font-family: Verdana, sans-serif
+	font-weight: bold
+	font-size: 15px
+	text-transform: uppercase
+	color: #FFF
+.lists
+	position: relative
+	top: -7px
+	padding: 0 0 8px 
+	width: 1000px 
+	background-color: #6ea31a
+	@include filter-gradient(#6ea31a, #8bd21a, vertical)
+	$experimental-support-for-svg: true
+	@include background-image(linear-gradient(top,  #6ea31a 0%,#8bd21a 100%))
+	-moz-border-radius: 10px 10px 0 0
+	-webkit-border-radius: 10px 10px 0 0
+	border-radius: 10px 10px 0 0
+	
+.lists__head
+	margin: 0 15px 0
+	padding: 15px 0 0 
+	background: url(../img/lists-head.png) 0 15px no-repeat
+	+clr
+.lists__head
+	.title
+		padding: 0 0 21px
+		height: 85px
+		color: #FFF
+		text-align: center
+		text-transform: uppercase
+	h3
+		padding: 21px 0 40px
+.lists__how,
+.lists__facts,
+.lists__understand
+	width: 300px
+	float: left
+	li
+		position: relative
+		padding: 0 0 10px 24px
+		font-weight: normal
+		color: #092334 
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(list-i)
+		span
+			font-weight: bold
+.lists__facts
+	padding: 0 0 0 10px
+
+.lists__how
+	padding: 0 20px 0 30px
+	h3
+		padding: 32px 0 50px
+.lists__understand
+	h3
+		padding: 17px 0 38px
+		line-height: 18px 
+.footer
+	position: relative
+	top: -7px
+	padding: 0 26px 0
+	height: 98px 
+	background: #67A20A 
+	-moz-border-radius: 0 0 10px 10px 
+	-webkit-border-radius: 0 0 10px 10px
+	border-radius: 0 0 10px 10px
+	font-size: 10px
+	color: #F8F8F8
+	+clr
+.footer__left,
+.footer__right
+	padding: 20px 0 0 
+	float: left
+	width: 474px
+	.text
+		padding: 0 0 12px
+		line-height: 1
+.footer__right
+	padding-top: 26px
+	float: right
+	width: 152px
+	text-align: left
+	.text
+		white-space: nowrap
+	
